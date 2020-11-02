@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var username= document.getElementById("usernameId").value;
+            // localStorage.setItem('uname',username);
+            // localStorage.setItem('message','have a great day');
+            // document.fromone.submit();
+            sessionStorage.setItem('uname1',username);
+            sessionStorage.setItem('message1','have a great day');
+            document.fromone.submit();
+            
+        }
+    </script>
+</head>
+<body>
+    <form action="trail.html" name="fromone">
+         <input type="text" name = "username" id = "usernameId">
+         <input type="button" value="onClick" onclick="validate()">
+    </form>
+    <div id="display"></div>
+</body>
+</html>

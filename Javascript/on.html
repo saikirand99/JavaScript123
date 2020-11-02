@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            if(document.getElementById("NAME").value==""){
+                alert("enter name");
+                document.validate123.NAME1.focus();
+            }
+            else if(document.getElementById("AGE").value==""){
+                alert("enter age")
+                document.validate123.AGE1.focus()
+            }
+            else{
+                alert("ypur are rregesterd")
+                document.validate123.submit();
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <form  action="onclick.html" method="get" name="validate123">
+    <h3>NAME</h3>
+    <input type="text" id="NAME" name="NAME1"><br>
+    <h3>age</h3>
+    <input type="text " id="AGE" name="AGE1"><br>
+    <h3>password</h3>
+    <!-- <input type="radio" id> -->
+    <input type="password" id="PASSWORD" name="PASSWORD1"><br>
+    <input type="button" value="BUTTON" onclick="validate()"><br>
+</form>
+</body>
+</html>
